@@ -1,0 +1,17 @@
+
+
+  在虚拟机和腾讯云中安装nginx
+	1，访问：http://nginx.org/en/linux_packages.html
+	2，在Ubuntu下载这个公钥：
+		wget http://nginx.org/keys/nginx_signing.key
+	3，添加key: 
+		apt-key add nginx_signing.key
+	4, 进入/etc/apt/sources.list文件：
+		vim /etc/apt/sources.list
+	      并在最后添加软件包源: 
+		deb http://nginx.org/packages/ubuntu/ xenial nginx
+		deb-src http://nginx.org/packages/ubuntu/ xenial nginx
+	5，更新：apt update
+	6，安装nginx：apt install nginx
+	7，启动nginx: nginx
+	8, 在浏览器访问nginx服务器，查看是否安装好nginx
