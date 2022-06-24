@@ -1,6 +1,0 @@
-show variables where Variable_name like '%char%';
-set password for root@localhost=password('APTX4869')
-
-
-
-docker run -itd --name mysql-test -p 3307:3306 -e MYSQL_ROOT_PASSWORD=aptx4869 mysql:latest
